@@ -4,11 +4,22 @@
     list-style: none;
     text-decoration: none;
 }
+body{
+    display: grid;
+    height: 2000px;
+    width: 100%;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 100px auto 100px;
+    grid-template-areas: "header header header"
+                         "main main main"
+                         "footer footer footer";
+}
 
 header{
     height: 100px;
     width: 100%;
-    flex-wrap: wrap
+    flex-wrap: wrap;
+    grid-area: header;    
 }
 
 header span{
@@ -67,20 +78,36 @@ header span img{
     color:red;
 }
 
+main{
+    background-color: slategrey;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-areas: "pd1 pd1 pd1 pd1"
+                         "pd2 pd2 pd2 pd2"
+                         "pp pp pp pp"
+                         "cp cp cp cp";
+}                   
+
 .productoDestacado{
     background-color:blueviolet;
+    grid-area: pd1;
 }
 
 .productoDestacado2{
-    background-color:orange ;
+    background-color:orange;
+    grid-area: pd2;
 }
 
 .pedidoPersonalizado{
     background-color:rgb(21, 166, 185) ;
+    grid-area: pp;
 }
 
 .catalogoPopular{
     background-color: plum;
+    grid-area: cp;
 }
 
 #botoneraPopular{
@@ -99,6 +126,7 @@ header span img{
 
 footer{
     background-color: white;
+    grid-area: footer;
 }
 
 footer nav ul{
