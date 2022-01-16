@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+header{
+    height: 100px;
+    width: 100%;
+    flex-wrap: wrap
+}
+
+header span{
+    background-color: white;
+    width: 10%;
+    height: 100%;
+    float: left;
+}
+
+header span img{
+    height: 50%;
+    padding: 23px;
+    border:  red 2px dashed;
+}
+
+#menuNavegacion{
+    background-color: white;
+    width: 90%;
+    height: 50%;
+    float:right;
+}
+#menuNavegacion ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#menuNavegacion ul li{
+    display: inline-block;
+    font-family: 'Oswald', sans-serif;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+
+#menuNavegacion ul li a{
+    color: black;
+}
+
+#menuCarrito{
+    background-color: white;
+    width: 90%;
+    height: 50%;
+    float:right;
+}
+
+#menuCarrito ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+#menuCarrito ul li{
+    display: inline-block;
+    font-family: 'Oswald', sans-serif;
+}
+
+#menuCarrito ul li a{
+    color:red;
+}
+
+.productoDestacado{
+    background-color:blueviolet;
+}
+
+.productoDestacado2{
+    background-color:orange ;
+}
+
+.pedidoPersonalizado{
+    background-color:rgb(21, 166, 185) ;
+}
+
+.catalogoPopular{
+    background-color: plum;
+}
+
+#botoneraPopular{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+#botoneraPopular li{
+    background-color: sandybrown;
+}
+
+#video1{
+    width: 100%;
+}
+
+footer{
+    background-color: white;
+}
+
+footer nav ul{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5%;
+}
+
+footer nav ul li{
+    display: inline-block;
+    margin-left: 5%;
+}
+
+#paraQuienCompras{
+    display: flex;
+    align-items:center;
+}
+
+#paraQuienCompras div{
+    padding: 5px;
+}
