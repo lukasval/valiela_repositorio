@@ -6,7 +6,7 @@
 }
 body{
     display: grid;
-    height: 2000px;
+    height: auto;
     width: 100%;
     grid-template-columns: 25% 50% 25%;
     grid-template-rows: 100px auto 100px;
@@ -79,7 +79,8 @@ header span img{
 }
 
 main{
-    background-color: slategrey;
+    background-color: rgb(136, 188, 240);
+    grid-area: main;
     display: grid;
     width: 100%;
     grid-template-columns: 25% 25% 25% 25%;
@@ -93,21 +94,27 @@ main{
 .productoDestacado{
     background-color:blueviolet;
     grid-area: pd1;
+    display: flex;
 }
 
 .productoDestacado2{
     background-color:orange;
     grid-area: pd2;
+    display: flex;
 }
 
 .pedidoPersonalizado{
     background-color:rgb(21, 166, 185) ;
     grid-area: pp;
+    height: fit-content;
+    display: flex;
 }
 
 .catalogoPopular{
     background-color: plum;
     grid-area: cp;
+    height: fit-content;
+    display: flex;
 }
 
 #botoneraPopular{
@@ -115,13 +122,19 @@ main{
     justify-content: space-around;
 }
 
-
 #botoneraPopular li{
     background-color: sandybrown;
 }
 
 #video1{
-    width: 100%;
+    height: auto;
+}
+
+#paraQuienCompras{
+    align-items:center;
+    display: inline-block;
+    display: flex;
+    flex-wrap:wrap;
 }
 
 footer{
@@ -140,11 +153,3 @@ footer nav ul li{
     margin-left: 5%;
 }
 
-#paraQuienCompras{
-    display: flex;
-    align-items:center;
-}
-
-#paraQuienCompras div{
-    padding: 5px;
-}
