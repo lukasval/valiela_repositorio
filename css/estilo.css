@@ -9,7 +9,7 @@ body{
     height: auto;
     width: 100%;
     grid-template-columns: 25% 50% 25%;
-    grid-template-rows: 100px auto 100px;
+    grid-template-rows: 100px 900px 100px;
     grid-template-areas: "header header header"
                          "main main main"
                          "footer footer footer";
@@ -95,6 +95,21 @@ main{
     background-color:blueviolet;
     grid-area: pd1;
     display: flex;
+    margin: 10px;
+}
+
+.productoDestacado h2{
+    text-align: center;
+}
+
+.productoDestacado p{
+    width: 40%;
+    margin-left: 20px;
+}
+
+#imagenProductoDestacado{
+    height: 50px;
+    margin: 5px;
 }
 
 .productoDestacado2{
@@ -134,7 +149,6 @@ main{
     align-items:center;
     display: inline-block;
     display: flex;
-    flex-wrap:wrap;
 }
 
 footer{
