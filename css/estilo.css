@@ -9,7 +9,7 @@ body{
     height: auto;
     width: 100%;
     grid-template-columns: 25% 50% 25%;
-    grid-template-rows: 100px 900px 100px;
+    grid-template-rows: 100px 1100px 100px;
     grid-template-areas: "header header header"
                          "main main main"
                          "footer footer footer";
@@ -75,16 +75,15 @@ header span img{
 }
 
 #menuCarrito ul li a{
-    color:red;
+    color:black;
 }
 
 main{
-    background-color: rgb(136, 188, 240);
     grid-area: main;
     display: grid;
-    width: 100%;
+    width: auto;
     grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-rows: auto auto auto auto;
     grid-template-areas: "pd1 pd1 pd1 pd1"
                          "pd2 pd2 pd2 pd2"
                          "pp pp pp pp"
@@ -92,7 +91,6 @@ main{
 }                   
 
 .productoDestacado{
-    background-color:blueviolet;
     grid-area: pd1;
     display: grid;
     grid-template-rows: 50% 50%;
@@ -101,48 +99,82 @@ main{
     padding: 10px;
 }
 
-.productoDestacado h2{
+.productoDestacado h1{
     text-align: center;
+    padding: 5px;
+    font-family: 'Oswald', sans-serif;
 }
 
 .productoDestacado p{
     margin-left: 5%;
     margin-right: 5%;
     text-align: center;
+    padding: 5px;
+    font-family: 'Oswald', sans-serif;
 }
 
 .productoDestacado button {
-    margin-right: 0%;
-    margin-left: 0%;
+    margin-top: 20px;
+    margin-left: 50%;
 }
 
 #imagenProductoDestacado{
-    height: 50%;
-    margin: 5px;
+    height: 100%;
 }
 
 .productoDestacado2{
-    background-color:orange;
     grid-area: pd2;
     display: flex;
     padding: 10px;
 }
 
+.productoDestacado2 h2{
+    margin-left: 25px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.productoDestacado2 p{
+    margin-left: 25px;
+    margin-top: 5px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.productoDestacado2 button{
+    margin-top: 10px;
+    margin-left: 50%;
+}
+
 .pedidoPersonalizado{
-    background-color:rgb(21, 166, 185) ;
     grid-area: pp;
     height: fit-content;
     display: flex;
     padding: 10px;
+    justify-content:space-around;
+}
+
+.pedidoPersonalizado h2{
+    font-family: 'Oswald', sans-serif;
+}
+
+.pedidoPersonalizado button{
+    margin-left: 30px;
+}
+
+.pedidoPersonalizado button a{
+    font-family: 'Oswald', sans-serif;
 
 }
 
 .catalogoPopular{
-    background-color: plum;
     grid-area: cp;
-    height: fit-content;
+    height: auto;
     display: flex;
     padding: 10px;
+    display: inline-block;
+}
+
+.catalogoPopular h2{
+    text-align: center;
 }
 
 #botoneraPopular{
@@ -151,17 +183,22 @@ main{
 }
 
 #botoneraPopular li{
-    background-color: sandybrown;
+    background-color: rgba(0, 0, 0, 0.123);
 }
 
 #video1{
-    height: auto;
+    height: 100%;
 }
 
 #paraQuienCompras{
-    align-items:center;
-    display: inline-block;
     display: flex;
+    margin: 5px;
+    justify-content: space-around;
+}
+
+#paraQuienCompras img{
+    height: 70%;
+    padding: 20px;
 }
 
 footer{
@@ -180,3 +217,46 @@ footer nav ul li{
     margin-left: 5%;
 }
 
+#mainTecnologias{
+    display: flex;
+}
+
+#tipoTecnologias h2{
+    text-align: center;
+    padding: 20px;
+}
+
+#tipoTecnologias ul li{
+    padding: 10px;
+    text-align: center;
+}
+
+#tipoTecnologias iframe{
+margin-left: 100px;
+margin-top: 100px;
+}
+
+#mainPedidos{
+    display: table-column;
+    align-items: center;
+    height: 50%;
+
+}
+
+#mainPedidos h1{
+    text-align: center;
+}
+
+#mainPedidos p{
+    text-align: center;
+}
+
+#mainPedidos img{
+padding: 5%;
+margin-left: 10%;
+width: 75%;
+}
+
+#mainContactanos{
+display: flex;
+}
