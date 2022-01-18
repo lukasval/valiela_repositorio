@@ -94,8 +94,11 @@ main{
 .productoDestacado{
     background-color:blueviolet;
     grid-area: pd1;
-    display: flex;
-    margin: 10px;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-rows: 100%;
+    grid-template-areas: "pdr primg";
+    padding: 10px;
 }
 
 .productoDestacado h2{
@@ -103,12 +106,18 @@ main{
 }
 
 .productoDestacado p{
-    width: 40%;
-    margin-left: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+}
+
+.productoDestacado button {
+    margin-right: 0%;
+    margin-left: 0%;
 }
 
 #imagenProductoDestacado{
-    height: 50px;
+    height: 50%;
     margin: 5px;
 }
 
@@ -116,6 +125,7 @@ main{
     background-color:orange;
     grid-area: pd2;
     display: flex;
+    padding: 10px;
 }
 
 .pedidoPersonalizado{
@@ -123,6 +133,8 @@ main{
     grid-area: pp;
     height: fit-content;
     display: flex;
+    padding: 10px;
+
 }
 
 .catalogoPopular{
@@ -130,6 +142,7 @@ main{
     grid-area: cp;
     height: fit-content;
     display: flex;
+    padding: 10px;
 }
 
 #botoneraPopular{
